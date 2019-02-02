@@ -3,7 +3,7 @@ steps:
 - name: 'gcr.io/cloud-builders/mvn'
   args: ['install']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/spring-boot-container/spring-boot-container-test', '.']
+  args: ['build', '-t', 'gcr.io/secret-country-230302/hello-container-test', '.']
   timeout: 500s
 options:
   machineType: 'N1_HIGHCPU_8'
